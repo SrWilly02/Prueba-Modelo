@@ -10,7 +10,7 @@ temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
 # Cargar el modelo
-model = torch.hub.load('ultralytics/yolov5', 'custom', path= r'C:\Users\USER\Desktop\Prueba Modelo\model\best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path= r'C:\Users\USER\Desktop\Prueba Modelo\model\best.pt', force_reload=True) # Para "path", pegar la ruta del modelo
 
 # Leer la imagen
 image_path = 'captura/captura_chrome2.png'
