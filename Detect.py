@@ -22,6 +22,10 @@ results = model(image)
 # Convertir los resultados en formato de imagen
 results_img = np.squeeze(results.render())
 
+# Guardar la imagen con detecciones en formato PNG
+output_path = 'resultado/deteccion_resultado.png'
+cv2.imwrite(output_path, results_img)
+
 # Mostrar la imagen con detecciones
 cv2.imshow('Detecciones YOLOv5', results_img)
 cv2.waitKey(0)
